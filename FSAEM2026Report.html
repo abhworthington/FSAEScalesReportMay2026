@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>FSAE Scales Summary - May 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="FSAEM2026Report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="FSAEM2026Report_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="FSAEM2026Report_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="FSAEM2026Report_files/libs/quarto-html/popper.min.js"></script>
+<script src="FSAEM2026Report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="FSAEM2026Report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="FSAEM2026Report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="FSAEM2026Report_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="FSAEM2026Report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="FSAEM2026Report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="FSAEM2026Report_files/libs/bootstrap/bootstrap-f431dca88e0fbe64e11b148644fdda25.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="FSAEM2026Report_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+<script src="FSAEM2026Report_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="FSAEM2026Report_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+<script src="FSAEM2026Report_files/libs/datatables-binding-0.34.0/datatables.js"></script>
+
+<script src="FSAEM2026Report_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="FSAEM2026Report_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="FSAEM2026Report_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="FSAEM2026Report_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="FSAEM2026Report_files/libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+
+<script src="FSAEM2026Report_files/libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+
+<link href="FSAEM2026Report_files/libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+
+<script src="FSAEM2026Report_files/libs/selectize-0.12.0/selectize.min.js"></script>
+
+<link href="FSAEM2026Report_files/libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="FSAEM2026Report_files/libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-overview" id="toc-sec-overview" class="nav-link active" data-scroll-target="#sec-overview">Overview</a></li>
+  <li><a href="#sec-weight-rank-vis" id="toc-sec-weight-rank-vis" class="nav-link" data-scroll-target="#sec-weight-rank-vis">Weight Rank Visualization</a></li>
+  <li><a href="#sec-attrib-cross" id="toc-sec-attrib-cross" class="nav-link" data-scroll-target="#sec-attrib-cross">Summary Tables - Comparisons Across Vehicle Attributes</a>
+  <ul class="collapse">
+  <li><a href="#frame-construction" id="toc-frame-construction" class="nav-link" data-scroll-target="#frame-construction">Frame Construction</a></li>
+  <li><a href="#wheel-diameter" id="toc-wheel-diameter" class="nav-link" data-scroll-target="#wheel-diameter">Wheel Diameter</a></li>
+  <li><a href="#aerodynamic-package" id="toc-aerodynamic-package" class="nav-link" data-scroll-target="#aerodynamic-package">Aerodynamic Package</a></li>
+  <li><a href="#engine-configuration-single-vs-multi" id="toc-engine-configuration-single-vs-multi" class="nav-link" data-scroll-target="#engine-configuration-single-vs-multi">Engine Configuration (Single vs Multi)</a></li>
+  <li><a href="#forced-induction" id="toc-forced-induction" class="nav-link" data-scroll-target="#forced-induction">Forced Induction</a></li>
+  </ul></li>
+  <li><a href="#weight-balance-visualization" id="toc-weight-balance-visualization" class="nav-link" data-scroll-target="#weight-balance-visualization">Weight Balance Visualization</a></li>
+  <li><a href="#wheelbase-visualizations" id="toc-wheelbase-visualizations" class="nav-link" data-scroll-target="#wheelbase-visualizations">Wheelbase Visualizations</a></li>
+  <li><a href="#sec-queue-cross" id="toc-sec-queue-cross" class="nav-link" data-scroll-target="#sec-queue-cross">Summary Tables by Queue and Design Time</a></li>
+  <li><a href="#overall-weight-rank-table" id="toc-overall-weight-rank-table" class="nav-link" data-scroll-target="#overall-weight-rank-table">Overall Weight Rank Table</a></li>
+  <li><a href="#car-number-weight-table" id="toc-car-number-weight-table" class="nav-link" data-scroll-target="#car-number-weight-table">Car Number Weight Table</a></li>
+  <li><a href="#alphabetical-weight-table" id="toc-alphabetical-weight-table" class="nav-link" data-scroll-target="#alphabetical-weight-table">Alphabetical Weight Table</a></li>
+  <li><a href="#weight-table-by-queue-and-time" id="toc-weight-table-by-queue-and-time" class="nav-link" data-scroll-target="#weight-table-by-queue-and-time">Weight Table by Queue and Time</a></li>
+  <li><a href="#interactive-results-table" id="toc-interactive-results-table" class="nav-link" data-scroll-target="#interactive-results-table">Interactive Results Table</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">FSAE Scales Summary - May 2026</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026-05-13 07:53:03</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- ## Navigation -->
+<!-- This document has sections covering different breakdowns and summaries of scales data from the event. It is meant to be scrolled in order, but to jump to one of the sections directly, click a link to the right. -->
+<section id="sec-overview" class="level2">
+<h2 class="anchored" data-anchor-id="sec-overview">Overview</h2>
+<p>A total of 0 teams were scaled before Design. Of the cars, the lightest was kg (), the mean car weight was NaNkg, and the median car was NAkg.</p>
+<p>For comparison, the lightest car in 2025 was 167.8kg (University of California - Berkley), the median car was 215kg, and the average was 220.9kg.</p>
+<p>In 2024, the lightest was 162.8kg (Vanderbilt), the median 210.9kg, and the average was 214.2kg.</p>
+<p>In 2023, the lightest was 160.6kg (Rose-Hulman), the median 213.4kg, and the average was 216.7kg.</p>
+</section>
+<section id="sec-weight-rank-vis" class="level2">
+<h2 class="anchored" data-anchor-id="sec-weight-rank-vis">Weight Rank Visualization</h2>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in max(rank(Input_Data$`Car Only`, ties.method = "random")): no
+non-missing arguments to max; returning -Inf</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
+(`geom_hline()`).
+Removed 1 row containing missing values or values outside the scale range
+(`geom_hline()`).
+Removed 1 row containing missing values or values outside the scale range
+(`geom_hline()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
+(`geom_text()`).
+Removed 1 row containing missing values or values outside the scale range
+(`geom_text()`).
+Removed 1 row containing missing values or values outside the scale range
+(`geom_text()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Weight%20Rank%20Vis-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The weight of each vehicle is presented on the vertical, the ranking of the vehicle overall (lightest to heaviest) on the horizontal. Tables ordered by weight, car number, alphabetically, and by queue and time, are provided at the end of the page for more detail. At the very bottom of the page is a dynamic data table with options for sorting, filtering, and searching (See navigation at left.)</p>
+</section>
+<section id="sec-attrib-cross" class="level2">
+<h2 class="anchored" data-anchor-id="sec-attrib-cross">Summary Tables - Comparisons Across Vehicle Attributes</h2>
+<p>Using information provided by teams at the time of weighing, the tables below compare the range of vehicle weights across frame type, aerodynamic package, wheel size, engine configuration/number of cylinders, and use of turbocharging. In each table, the minimum, 25th percentile, median, 75th percentile, and maximum weight are provided, as are the mean and sample standard deviation (and count of vehicles). Below the tables are “raincloud” visualizations of the data, with weights rounded to the nearest kg on the left, a boxplot (with outliers removed) in the center, and a density plot at right.</p>
+<section id="frame-construction" class="level3">
+<h3 class="anchored" data-anchor-id="frame-construction">Frame Construction</h3>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 2 warnings in `summarize()`.
+The first warning was:
+ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
+Caused by warning in `min()`:
+! no non-missing arguments to min; returning Inf
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
+</div>
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weight Summary by Frame Construction</caption>
+<colgroup>
+<col style="width: 6%">
+<col style="width: 14%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Frame</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">25% Weight</th>
+<th style="text-align: right;">75% Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Frame%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="wheel-diameter" class="level3">
+<h3 class="anchored" data-anchor-id="wheel-diameter">Wheel Diameter</h3>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 2 warnings in `summarize()`.
+The first warning was:
+ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
+Caused by warning in `min()`:
+! no non-missing arguments to min; returning Inf
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
+</div>
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weight Summary by Wheel Diameter</caption>
+<colgroup>
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Wheel Diameter</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">25% Weight</th>
+<th style="text-align: right;">75% Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Wheel%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="aerodynamic-package" class="level3">
+<h3 class="anchored" data-anchor-id="aerodynamic-package">Aerodynamic Package</h3>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 2 warnings in `summarize()`.
+The first warning was:
+ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
+Caused by warning in `min()`:
+! no non-missing arguments to min; returning Inf
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
+</div>
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weight Summary by Aerodynamic Package</caption>
+<colgroup>
+<col style="width: 18%">
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Aerodynamic Package</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">25% Weight</th>
+<th style="text-align: right;">75% Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Aero%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="engine-configuration-single-vs-multi" class="level3">
+<h3 class="anchored" data-anchor-id="engine-configuration-single-vs-multi">Engine Configuration (Single vs Multi)</h3>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 2 warnings in `summarize()`.
+The first warning was:
+ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
+Caused by warning in `min()`:
+! no non-missing arguments to min; returning Inf
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
+</div>
+<div class="cell-output-display">
+<table class="caption-top" style="width:100%;">
+<caption>Weight Summary by Engine Cylinders</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Engine Cylinders</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">25% Weight</th>
+<th style="text-align: right;">75% Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Engine%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="forced-induction" class="level3">
+<h3 class="anchored" data-anchor-id="forced-induction">Forced Induction</h3>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 2 warnings in `summarize()`.
+The first warning was:
+ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
+Caused by warning in `min()`:
+! no non-missing arguments to min; returning Inf
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
+</div>
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weight Summary by Forced Induction</caption>
+<colgroup>
+<col style="width: 6%">
+<col style="width: 14%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Turbo</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">25% Weight</th>
+<th style="text-align: right;">75% Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Turbo%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="weight-balance-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="weight-balance-visualization">Weight Balance Visualization</h2>
+<p>Here, Front Weight % versus Left/Right Weight % is compared with each marker representing a car. Additionally, concentric rings represent bivariate density (joint distribution of X and Y variable), where the innermost rings are areas of highest mass/density observed (most data/observations).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Weight%20Balance%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="wheelbase-visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="wheelbase-visualizations">Wheelbase Visualizations</h2>
+<p>First, a comparison of overall vehicle weight against the wheelbase. A linear fit (with 95% confidence interval) is presented atop the scatterplot.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Wheelbase%20vs%20Weight%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Second, a comparison of wheelbase against Front %. A linear fit (with 95% confidence interval) is presented atop the scatterplot.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Wheelbase%20vs%20Front%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-queue-cross" class="level2">
+<h2 class="anchored" data-anchor-id="sec-queue-cross">Summary Tables by Queue and Design Time</h2>
+<p>Across the 0 different queues, the queue with the lowest median was Queue , with a median weight of kg. Across the queues, the median weight varied by -kg.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weight Summary by Queue</caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Design Queue</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">25% Weight</th>
+<th style="text-align: right;">75% Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<p>Across the 8 different design slots, the time with the lowest median was , with a median weight of kg. Across the queues, the median weight varied by -kg.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weight Summary by Time</caption>
+<colgroup>
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Design Time</th>
+<th style="text-align: right;">Median Weight</th>
+<th style="text-align: right;">Min Weight</th>
+<th style="text-align: right;">First Quartile Weight</th>
+<th style="text-align: right;">Third Quartile Weight</th>
+<th style="text-align: right;">Max Weight</th>
+<th style="text-align: right;">Mean Weight</th>
+<th style="text-align: right;">StDev Weight</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="overall-weight-rank-table" class="level2">
+<h2 class="anchored" data-anchor-id="overall-weight-rank-table">Overall Weight Rank Table</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weights Data, sorted by Car Only Weight</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Car Number</th>
+<th style="text-align: left;">School Name</th>
+<th style="text-align: right;">Car Only</th>
+<th style="text-align: left;">Front %</th>
+<th style="text-align: left;">Left %</th>
+<th style="text-align: left;">Design Queue</th>
+<th style="text-align: left;">Design Time</th>
+<th style="text-align: right;">Weight Rank Overall</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="car-number-weight-table" class="level2">
+<h2 class="anchored" data-anchor-id="car-number-weight-table">Car Number Weight Table</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weights Data, sorted by Car Number</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Car Number</th>
+<th style="text-align: left;">School Name</th>
+<th style="text-align: right;">Car Only</th>
+<th style="text-align: left;">Front %</th>
+<th style="text-align: left;">Left %</th>
+<th style="text-align: left;">Design Queue</th>
+<th style="text-align: left;">Design Time</th>
+<th style="text-align: right;">Weight Rank Overall</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="alphabetical-weight-table" class="level2">
+<h2 class="anchored" data-anchor-id="alphabetical-weight-table">Alphabetical Weight Table</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weights Data, sorted by Car Number</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Car Number</th>
+<th style="text-align: left;">School Name</th>
+<th style="text-align: right;">Car Only</th>
+<th style="text-align: left;">Front %</th>
+<th style="text-align: left;">Left %</th>
+<th style="text-align: left;">Design Queue</th>
+<th style="text-align: left;">Design Time</th>
+<th style="text-align: right;">Weight Rank Overall</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="weight-table-by-queue-and-time" class="level2">
+<h2 class="anchored" data-anchor-id="weight-table-by-queue-and-time">Weight Table by Queue and Time</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<caption>Weights Data, sorted by Car Number</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Car Number</th>
+<th style="text-align: left;">School Name</th>
+<th style="text-align: right;">Car Only</th>
+<th style="text-align: left;">Front %</th>
+<th style="text-align: left;">Left %</th>
+<th style="text-align: left;">Design Queue</th>
+<th style="text-align: left;">Design Time</th>
+<th style="text-align: right;">Weight Rank Overall</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="interactive-results-table" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-results-table">Interactive Results Table</h2>
+<p>In this table, you can filter, sort, and search in the results. Because of the number of columns present in the data, you may need to scroll the table left and right to see all columns. To filter/select, use the boxes below the column names - for numeric columns, this will give a slider filter, for text/category columns, this will give selectable filters. To search for a particular school or element, use the search box. To sort by values of a column, click on the arrows/diamond adjacent to the column name.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-352015eaef2807cf62f8" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-352015eaef2807cf62f8">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;No&quot;,&quot;Yes, No Cooler&quot;,&quot;Yes, Cooler&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Tube Frame&quot;,&quot;Hybrid&quot;,&quot;Monocoque&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;None&quot;,&quot;Tray Only&quot;,&quot;Wings Only&quot;,&quot;Full Package&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;10\\&quot;&quot;,&quot;13\\&quot;&quot;,&quot;Other&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;8:30AM&quot;,&quot;9:30AM&quot;,&quot;10:30AM&quot;,&quot;12:30PM&quot;,&quot;1:30PM&quot;,&quot;2:30PM&quot;,&quot;3:30PM&quot;,&quot;4:30PM&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Car Number<\/th>\n      <th>School Name<\/th>\n      <th>Car Only<\/th>\n      <th>Front %<\/th>\n      <th>Left %<\/th>\n      <th>Engine Cylinders<\/th>\n      <th>Engine Displacement<\/th>\n      <th>Turbo<\/th>\n      <th>Frame<\/th>\n      <th>Aerodynamic Package<\/th>\n      <th>Wheel Diameter<\/th>\n      <th>Wheelbase<\/th>\n      <th>Design Queue<\/th>\n      <th>Design Time<\/th>\n      <th>Weight Rank Overall<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":11,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 2, 3, \",\", \".\", null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[0,14]},{"name":"Car Number","targets":0},{"name":"School Name","targets":1},{"name":"Car Only","targets":2},{"name":"Front %","targets":3},{"name":"Left %","targets":4},{"name":"Engine Cylinders","targets":5},{"name":"Engine Displacement","targets":6},{"name":"Turbo","targets":7},{"name":"Frame","targets":8},{"name":"Aerodynamic Package","targets":9},{"name":"Wheel Diameter","targets":10},{"name":"Wheelbase","targets":11},{"name":"Design Queue","targets":12},{"name":"Design Time","targets":13},{"name":"Weight Rank Overall","targets":14}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\n}"}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
