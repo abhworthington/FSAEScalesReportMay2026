@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#weight-balance-visualization" id="toc-weight-balance-visualization" class="nav-link" data-scroll-target="#weight-balance-visualization">Weight Balance Visualization</a></li>
   <li><a href="#wheelbase-visualizations" id="toc-wheelbase-visualizations" class="nav-link" data-scroll-target="#wheelbase-visualizations">Wheelbase Visualizations</a></li>
-  <li><a href="#sec-queue-cross" id="toc-sec-queue-cross" class="nav-link" data-scroll-target="#sec-queue-cross">Summary Tables by Queue and Design Time</a></li>
+  <li><a href="#sec-queue-cross" id="toc-sec-queue-cross" class="nav-link" data-scroll-target="#sec-queue-cross">Summary Tables and Chart by Queue and Design Time</a></li>
   <li><a href="#overall-weight-rank-table" id="toc-overall-weight-rank-table" class="nav-link" data-scroll-target="#overall-weight-rank-table">Overall Weight Rank Table</a></li>
   <li><a href="#car-number-weight-table" id="toc-car-number-weight-table" class="nav-link" data-scroll-target="#car-number-weight-table">Car Number Weight Table</a></li>
   <li><a href="#alphabetical-weight-table" id="toc-alphabetical-weight-table" class="nav-link" data-scroll-target="#alphabetical-weight-table">Alphabetical Weight Table</a></li>
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026-05-13 07:53:03</p>
+      <p class="date">2026-05-13 12:12:16</p>
     </div>
   </div>
   
@@ -127,6 +127,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- Edit this chunk in order to customize the data processing for the Excel or other
+document containing the scales data.. -->
 <!-- ## Navigation -->
 <!-- This document has sections covering different breakdowns and summaries of scales data from the event. It is meant to be scrolled in order, but to jump to one of the sections directly, click a link to the right. -->
 <section id="sec-overview" class="level2">
@@ -139,26 +141,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-weight-rank-vis" class="level2">
 <h2 class="anchored" data-anchor-id="sec-weight-rank-vis">Weight Rank Visualization</h2>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in max(rank(Input_Data$`Car Only`, ties.method = "random")): no
-non-missing arguments to max; returning -Inf</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
-(`geom_hline()`).
-Removed 1 row containing missing values or values outside the scale range
-(`geom_hline()`).
-Removed 1 row containing missing values or values outside the scale range
-(`geom_hline()`).</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
-(`geom_text()`).
-Removed 1 row containing missing values or values outside the scale range
-(`geom_text()`).
-Removed 1 row containing missing values or values outside the scale range
-(`geom_text()`).</code></pre>
-</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -175,14 +157,6 @@ Removed 1 row containing missing values or values outside the scale range
 <section id="frame-construction" class="level3">
 <h3 class="anchored" data-anchor-id="frame-construction">Frame Construction</h3>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There were 2 warnings in `summarize()`.
-The first warning was:
-ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
-Caused by warning in `min()`:
-! no non-missing arguments to min; returning Inf
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
-</div>
 <div class="cell-output-display">
 <table class="caption-top">
 <caption>Weight Summary by Frame Construction</caption>
@@ -228,14 +202,6 @@ Caused by warning in `min()`:
 <section id="wheel-diameter" class="level3">
 <h3 class="anchored" data-anchor-id="wheel-diameter">Wheel Diameter</h3>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There were 2 warnings in `summarize()`.
-The first warning was:
-ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
-Caused by warning in `min()`:
-! no non-missing arguments to min; returning Inf
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
-</div>
 <div class="cell-output-display">
 <table class="caption-top">
 <caption>Weight Summary by Wheel Diameter</caption>
@@ -281,14 +247,6 @@ Caused by warning in `min()`:
 <section id="aerodynamic-package" class="level3">
 <h3 class="anchored" data-anchor-id="aerodynamic-package">Aerodynamic Package</h3>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There were 2 warnings in `summarize()`.
-The first warning was:
-ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
-Caused by warning in `min()`:
-! no non-missing arguments to min; returning Inf
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
-</div>
 <div class="cell-output-display">
 <table class="caption-top">
 <caption>Weight Summary by Aerodynamic Package</caption>
@@ -334,14 +292,6 @@ Caused by warning in `min()`:
 <section id="engine-configuration-single-vs-multi" class="level3">
 <h3 class="anchored" data-anchor-id="engine-configuration-single-vs-multi">Engine Configuration (Single vs Multi)</h3>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There were 2 warnings in `summarize()`.
-The first warning was:
-ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
-Caused by warning in `min()`:
-! no non-missing arguments to min; returning Inf
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
-</div>
 <div class="cell-output-display">
 <table class="caption-top" style="width:100%;">
 <caption>Weight Summary by Engine Cylinders</caption>
@@ -387,14 +337,6 @@ Caused by warning in `min()`:
 <section id="forced-induction" class="level3">
 <h3 class="anchored" data-anchor-id="forced-induction">Forced Induction</h3>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There were 2 warnings in `summarize()`.
-The first warning was:
-ℹ In argument: `Min Weight = round(min(`Car Only`), 1)`.
-Caused by warning in `min()`:
-! no non-missing arguments to min; returning Inf
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
-</div>
 <div class="cell-output-display">
 <table class="caption-top">
 <caption>Weight Summary by Forced Induction</caption>
@@ -475,7 +417,7 @@ Caused by warning in `min()`:
 </div>
 </section>
 <section id="sec-queue-cross" class="level2">
-<h2 class="anchored" data-anchor-id="sec-queue-cross">Summary Tables by Queue and Design Time</h2>
+<h2 class="anchored" data-anchor-id="sec-queue-cross">Summary Tables and Chart by Queue and Design Time</h2>
 <p>Across the 0 different queues, the queue with the lowest median was Queue , with a median weight of kg. Across the queues, the median weight varied by -kg.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -510,6 +452,15 @@ Caused by warning in `min()`:
 </table>
 </div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Queue%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>Across the 8 different design slots, the time with the lowest median was , with a median weight of kg. Across the queues, the median weight varied by -kg.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -542,6 +493,15 @@ Caused by warning in `min()`:
 <tbody>
 </tbody>
 </table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="FSAEM2026Report_files/figure-html/Time%20Split%20Chart-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -686,8 +646,8 @@ Caused by warning in `min()`:
 <p>In this table, you can filter, sort, and search in the results. Because of the number of columns present in the data, you may need to scroll the table left and right to see all columns. To filter/select, use the boxes below the column names - for numeric columns, this will give a slider filter, for text/category columns, this will give selectable filters. To search for a particular school or element, use the search box. To sort by values of a column, click on the arrows/diamond adjacent to the column name.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-352015eaef2807cf62f8" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-352015eaef2807cf62f8">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;No&quot;,&quot;Yes, No Cooler&quot;,&quot;Yes, Cooler&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Tube Frame&quot;,&quot;Hybrid&quot;,&quot;Monocoque&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;None&quot;,&quot;Tray Only&quot;,&quot;Wings Only&quot;,&quot;Full Package&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;10\\&quot;&quot;,&quot;13\\&quot;&quot;,&quot;Other&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;8:30AM&quot;,&quot;9:30AM&quot;,&quot;10:30AM&quot;,&quot;12:30PM&quot;,&quot;1:30PM&quot;,&quot;2:30PM&quot;,&quot;3:30PM&quot;,&quot;4:30PM&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Car Number<\/th>\n      <th>School Name<\/th>\n      <th>Car Only<\/th>\n      <th>Front %<\/th>\n      <th>Left %<\/th>\n      <th>Engine Cylinders<\/th>\n      <th>Engine Displacement<\/th>\n      <th>Turbo<\/th>\n      <th>Frame<\/th>\n      <th>Aerodynamic Package<\/th>\n      <th>Wheel Diameter<\/th>\n      <th>Wheelbase<\/th>\n      <th>Design Queue<\/th>\n      <th>Design Time<\/th>\n      <th>Weight Rank Overall<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":11,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 2, 3, \",\", \".\", null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[0,14]},{"name":"Car Number","targets":0},{"name":"School Name","targets":1},{"name":"Car Only","targets":2},{"name":"Front %","targets":3},{"name":"Left %","targets":4},{"name":"Engine Cylinders","targets":5},{"name":"Engine Displacement","targets":6},{"name":"Turbo","targets":7},{"name":"Frame","targets":8},{"name":"Aerodynamic Package","targets":9},{"name":"Wheel Diameter","targets":10},{"name":"Wheelbase","targets":11},{"name":"Design Queue","targets":12},{"name":"Design Time","targets":13},{"name":"Weight Rank Overall","targets":14}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\n}"}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.rowCallback"],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1ad45f711b27fb6832ad" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1ad45f711b27fb6832ad">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Single&quot;,&quot;Multi&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;No&quot;,&quot;Yes&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Tube Frame&quot;,&quot;Part/Full Monocoque&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;None&quot;,&quot;Wings or Tray&quot;,&quot;Wings and Tray&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;10\\&quot;&quot;,&quot;13\\&quot;&quot;,&quot;Other&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;8:30AM&quot;,&quot;9:30AM&quot;,&quot;10:30AM&quot;,&quot;12:30PM&quot;,&quot;1:30PM&quot;,&quot;2:30PM&quot;,&quot;3:30PM&quot;,&quot;4:30PM&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Car Number<\/th>\n      <th>School Name<\/th>\n      <th>Car Only<\/th>\n      <th>Front %<\/th>\n      <th>Left %<\/th>\n      <th>Engine Cylinders<\/th>\n      <th>Engine Displacement<\/th>\n      <th>Turbo<\/th>\n      <th>Frame<\/th>\n      <th>Aerodynamic Package<\/th>\n      <th>Wheel Diameter<\/th>\n      <th>Wheelbase<\/th>\n      <th>Design Queue<\/th>\n      <th>Design Time<\/th>\n      <th>Weight Rank Overall<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":11,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 2, 3, \",\", \".\", null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[0,6,11,14]},{"name":"Car Number","targets":0},{"name":"School Name","targets":1},{"name":"Car Only","targets":2},{"name":"Front %","targets":3},{"name":"Left %","targets":4},{"name":"Engine Cylinders","targets":5},{"name":"Engine Displacement","targets":6},{"name":"Turbo","targets":7},{"name":"Frame","targets":8},{"name":"Aerodynamic Package","targets":9},{"name":"Wheel Diameter","targets":10},{"name":"Wheelbase","targets":11},{"name":"Design Queue","targets":12},{"name":"Design Time","targets":13},{"name":"Weight Rank Overall","targets":14}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\n}"}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
